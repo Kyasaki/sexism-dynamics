@@ -1,0 +1,123 @@
+#app {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(9, 0, 18);
+}
+
+.chart-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  background: #111;
+  padding: 10px;
+}
+
+.chart-header-name {
+  font-size: 1.2em;
+  flex-grow: 1;
+}
+
+.button {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 3px 7px;
+  border-radius: 7px;
+  background: #333;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background ease 0.3s, color ease 0.3s;
+}
+
+.button:hover {
+  background: #3d3d3d;
+}
+
+.button[data-active] {
+  background: rgb(62, 0, 121);
+}
+
+.button[data-active]:hover {
+  background: rgb(81, 0, 158);
+}
+
+.chart {
+  flex-grow: 1;
+  position: relative;
+}
+
+.screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.label {
+  display: flex;
+  margin: 20px;
+  color: #fff8;
+  cursor: pointer;
+  pointer-events: none;
+  transition: font-size ease 0.3s;
+}
+
+.label>div {
+  pointer-events: all;
+}
+
+.label[data-selected] {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.label-name {
+  font-size: 1.5em;
+  text-transform: capitalize;
+}
+
+.label-brief {
+  font-style: italic;
+  opacity: 0.7;
+}
+
+.split {
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+.split>* {
+  flex-grow: 1;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: auto;
+  padding: 3px;
+  box-sizing: border-box;
+  background: #fff3;
+  backdrop-filter: blur(1px);
+  color: #fff;
+  text-align: center;
+  transition: top ease 0.4s;
+}
+
+.bar-global {
+  background: rgba(140, 0, 255, 0.388);
+  color: #fff;
+}
