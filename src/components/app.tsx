@@ -25,7 +25,7 @@ const targets = {
   autocracy: { action: Action.hate, gender: Gender.neutral, brief: "Hate all equally - but me" },
   androcentrism: { action: Action.love, gender: Gender.male, brief: "Love men" },
   masculinism: { action: Action.favor, gender: Gender.male, brief: "Favor men" },
-  misandry: { action: Action.hate, gender: Gender.male, brief: "Hate male" },
+  misandry: { action: Action.hate, gender: Gender.male, brief: "Hate men" },
 }
 type TargetName = keyof typeof targets
 
